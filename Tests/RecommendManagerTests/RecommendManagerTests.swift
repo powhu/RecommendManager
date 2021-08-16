@@ -3,6 +3,6 @@
 
     final class RecommendManagerTests: XCTestCase {
         func testExample() {
-            XCTAssert(!RecommendManager.RecommendAppManager().apps.isEmpty)
+            XCTAssert(!RecommendAppManager().apps.isEmpty)
         }
     }

@@ -2,18 +2,18 @@ import UIKit
 import StoreKit
 
 public struct App {
-    var name: String
-    var info: String
-    var icon: UIImage
-    var urlSceme: String
-    var appId: String
-    var isInstalled: Bool {
+    public let name: String
+    public let info: String
+    public let icon: UIImage
+    public let urlSceme: String
+    public let appId: String
+    public var isInstalled: Bool {
         UIApplication.shared.canOpenURL(URL(string: "\(urlSceme)://")!)
     }
-    var itemsUrl: URL {
+    public var itemsUrl: URL {
         return URL(string: "itms-apps://itunes.apple.com/app/id\(appId)?mt=8")!
     }
-    var openAppUrl: URL {
+    public var openAppUrl: URL {
         return URL(string: "\(urlSceme)://")!
     }
     
